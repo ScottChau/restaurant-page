@@ -1,0 +1,1 @@
+(()=>{console.log("Testing YoYo");const e=document.querySelector("#content");!function(){const t=document.createElement("h1"),n=document.createElement("img");n.src="http://secure.s.forbestravelguide.com/img/properties/one-restaurant/one-restaurant.jpg",t.textContent="The Number One Restaurant in Toronto",e.appendChild(t),e.appendChild(n)}()})();
