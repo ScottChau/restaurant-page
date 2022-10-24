@@ -6,6 +6,5 @@ export default function homeView() {
     "http://secure.s.forbestravelguide.com/img/properties/one-restaurant/one-restaurant.jpg";
   headline.textContent = "The Number One Restaurant in Toronto";
 
-  content.appendChild(headline);
-  content.appendChild(image);
+  content.append(headline, image);
 }
