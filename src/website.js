@@ -10,9 +10,6 @@ function createHeader() {
   return header;
 }
 
-createHeader();
-const header = document.querySelector(".header");
-
 function createMain() {
   const main = document.createElement("main");
   main.classList.add("main");
@@ -21,7 +18,10 @@ function createMain() {
   return main;
 }
 
-function createBtn() {
+function createNav() {
+  const nav = document.createElement("nav");
+  nav.classList.add("nav");
+
   const homeBtn = document.createElement("button");
   homeBtn.innerHTML = "Home Page";
   homeBtn.classList.add("homeBtn");
@@ -34,12 +34,27 @@ function createBtn() {
   contactBtn.innerHTML = "Contact Details";
   contactBtn.classList.add("contactBtn");
 
-  return header.append(homeBtn, menuBtn, contactBtn);
+  nav.append(homeBtn, menuBtn, contactBtn);
+
+  return nav;
+}
+
+function createFooter() {
+  const footer = document.createElement("div");
+  const copyRight = document.createElement("h3");
+  footer.classList.add("footer");
+
+  copyRight.textContent = "Copyright Ⓒ Scott Chau";
+
+  footer.appendChild(copyRight);
+
+  content.appendChild(footer);
+
+  return footer;
 }
 
 export default function initial() {
-  createBtn();
+  createHeader().appendChild(createNav());
   createMain();
-
-  const main = document.querySelector(".main");
+  createFooter();
 }
