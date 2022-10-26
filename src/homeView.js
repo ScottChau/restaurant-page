@@ -1,15 +1,18 @@
 function createHomePage() {
   const homePage = document.createElement("div");
   const headline = document.createElement("h1");
-  const image = document.createElement("img");
+  const bgImage = document.createElement("img");
 
   homePage.classList.add("homePage");
 
-  image.src =
+  bgImage.src =
     "http://secure.s.forbestravelguide.com/img/properties/one-restaurant/one-restaurant.jpg";
+
+  bgImage.classList.add("bgImage");
+
   headline.textContent = "The Number One Restaurant in Toronto";
 
-  homePage.append(headline, image);
+  homePage.append(headline, bgImage);
 
   return homePage;
 }

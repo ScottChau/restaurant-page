@@ -2,6 +2,7 @@ import homeView from "./homeView.js";
 import menuView from "./menuView.js";
 import contactView from "./contactView.js";
 import initial from "./website.js";
+import "./style.css";
 
 initial();
 
