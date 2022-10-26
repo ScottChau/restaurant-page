@@ -1,4 +1,6 @@
-.bgImage {
-  height: 500px;
-  width: 500px;
+body {
+  color: white;
+  background-image: url(https://images.wallpaperscraft.com/image/single/evening_table_dinner_restaurant_coast_look_fires_garland_48367_3840x2160.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }

@@ -5,11 +5,6 @@ function createHomePage() {
 
   homePage.classList.add("homePage");
 
-  bgImage.src =
-    "http://secure.s.forbestravelguide.com/img/properties/one-restaurant/one-restaurant.jpg";
-
-  bgImage.classList.add("bgImage");
-
   headline.textContent = "The Number One Restaurant in Toronto";
 
   homePage.append(headline, bgImage);
