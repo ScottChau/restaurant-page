@@ -1,6 +1,45 @@
 body {
   color: white;
-  background-image: url(https://images.wallpaperscraft.com/image/single/evening_table_dinner_restaurant_coast_look_fires_garland_48367_3840x2160.jpg);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url(https://images.wallpaperscraft.com/image/single/evening_table_dinner_restaurant_coast_look_fires_garland_48367_3840x2160.jpg);
   background-attachment: fixed;
   background-size: cover;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-20%);
+}
+
+.content {
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin: auto;
+}
+
+.main {
+  max-width: 700px;
+  padding: 4rem;
+  margin: 8rem 0;
+  height: 280px;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
 }
